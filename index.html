@@ -1,10 +1,15 @@
-<!--^ Inicio do Header  -->
+<!--^ Primeira parte: Inicio do Header  -->
 
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="wiewport" content="width=device-widht,user-scalable=0" />
-        <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+        <!-- Primeiro CSS -->
+            <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+        <!-- Segundo CSS -->
+            <link rel="stylesheet" type="text/css" href="assets/css/section-banner.css" />
+        <!-- Terceiro CSS -->
+            <link rel="stylesheet" href="assets/css/section-geral.css">
         <title>MedCenter</title>
     </head>
     <body>
@@ -27,5 +32,77 @@
                 </div>
             </div>
         </header>
+
+        <!--^ Segunda parte: Inicio da Section -->
+        <section id="banner">
+            <div class="container column">
+                <div class="banner_headline">
+                    <h1>Top notch experience</h1>
+                    <h2>Medicenter is a responsive templete perfect for all screen sizes</h2>
+                </div>
+                <div class="banner_options">
+                    <div class="banner1">
+                        <div class="banner_title">Emergency Case</div>
+                        <div class="banner_desc">Algum texto qualquer</div>
+                        <a href="#">Read more</a>
+                    </div>
+                    <div class="banner2">
+                        <div class="banner_title">Doctors Timetable</div>
+                        <div class="banner_desc">Algum texto qualquer</div>
+                        <a href="#">Read more</a>
+                    </div>
+                    <div class="banner3">
+                            <div class="banner_title">Opening Hours</div>
+                            <div class="banner_desc monday">
+                                <div>Monday-Friday</div>
+                                <div>8.00-17.00</div>
+                            </div>
+                            <div class="banner_desc saturday">
+                                <div>Saturday</div>
+                                <div>9.30-17.30</div>
+                            </div>
+                            <div class="banner_desc sunday">
+                                <div>Sunday</div>
+                                <div>9.30-15.00</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="geral">
+            <div class="container">
+                <section>
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest News</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </section>
+                <aside>
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Departement</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Make An Appointment</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
     </body>
 </html>
