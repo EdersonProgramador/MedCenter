@@ -2,6 +2,17 @@
     /* nav ul, nav li {
         flex-direction: column;
     } */
+
+    .banner_headline h1 {
+        padding-left: 10px;
+        font-size: 45px;
+    }
+    .banner_headline h2 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+        text-shadow: 0px 1px 7px #003b58;
+    }
+
     .container {
         flex-direction: column;
     }
@@ -33,6 +44,10 @@
     nav ul {
         flex-direction: column;
         display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
     }
 
     header {
@@ -40,5 +55,31 @@
     }
     .logo {
         padding-left: 20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+    }
+    .widget_title {
+        padding-top: 20px;
+        padding-left:10px;
+    }
+    .widget_body {
+        padding-left:10px;
+    }
+    .widget_body flex {
+        padding-left: 10px;
+    }
+    .footer_areaitem {
+        padding-left: 10px;
+    }
+    .flexColumn {
+        align-items: center;
     }
 }

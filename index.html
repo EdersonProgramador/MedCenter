@@ -15,6 +15,18 @@
             <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
         <!-- @Media  -->
             <link rel="stylesheet" type="text/css" href="assets/css/@media1.css" />
+
+            <script>
+                window.onload = function() {
+                    document.querySelector(".menuMobile").addEventListener("click", function() {
+                        if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                            document.querySelector(".menu nav ul").style.display = 'none';
+                        } else {
+                            document.querySelector(".menu nav ul").style.display = 'flex';
+                        }
+                    });
+                };
+            </script>
         
         <title>MedCenter</title>
     </head>
@@ -27,7 +39,9 @@
                 <div class="menu">
                     <nav>
                         <div class="menuMobile">
-                            
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
                         </div>
                         <ul>
                             <li class="active"><a href="#">HOME</a></li>
@@ -46,33 +60,33 @@
         <section id="banner">
             <div class="container column">
                 <div class="banner_headline">
-                    <h1>Top notch experience</h1>
-                    <h2>Medicenter is a responsive templete perfect for all screen sizes</h2>
+                    <h1>Experiência de alto nível</h1>
+                    <h2>O Medicenter é um template responsivo perfeito para todos os tamanhos de tela</h2>
                 </div>
                 <div class="banner_options">
                     <div class="banner1">
-                        <div class="banner_title">Emergency Case</div>
-                        <div class="banner_desc">Algum texto qualquer</div>
-                        <a href="#">Read more</a>
+                        <div class="banner_title">Em caso de emergência ligue</div>
+                        <div class="banner_desc">+55 91 98888-7777</div>
+                        <a href="#">Leia mais</a>
                     </div>
                     <div class="banner2">
-                        <div class="banner_title">Doctors Timetable</div>
-                        <div class="banner_desc">Algum texto qualquer</div>
-                        <a href="#">Read more</a>
+                        <div class="banner_title">Horário dos Médicos</div>
+                        <div class="banner_desc">É importante verificar o horário de atendimento dos médicos para garantir que seja possível agendar uma consulta de acordo com a disponibilidade do profissional.</div>
+                        <a href="#">Leia mais</a>
                     </div>
                     <div class="banner3">
-                            <div class="banner_title">Opening Hours</div>
+                            <div class="banner_title">Horário de Funcionamento</div>
                             <div class="banner_desc monday">
-                                <div>Monday-Friday</div>
-                                <div>8.00-17.00</div>
+                                <div>Segunda</div>
+                                <div>08:00 as 17:00</div>
                             </div>
                             <div class="banner_desc saturday">
-                                <div>Saturday</div>
-                                <div>9.30-17.30</div>
+                                <div>Quarta</div>
+                                <div>08:00 as 17:00</div>
                             </div>
                             <div class="banner_desc sunday">
-                                <div>Sunday</div>
-                                <div>9.30-15.00</div>
+                                <div>Sexta</div>
+                                <div>08:00 as 17:00</div>
                             </div>
                     </div>
                 </div>
@@ -83,76 +97,111 @@
                 <section>
                     <div class="widget">
                         <div class="widget_title">
-                            <div class="widget_title_text">Latest News</div>
+                            <div class="widget_title_text">Últimas notícias</div>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="widget_body flex">
                             <article>
-                                <a href="#">
+                                <a href="https://www.cnnbrasil.com.br/saude/no-brasil-57-das-meninas-tomaram-duas-doses-de-vacina-contra-hpv/" target="_blank">
                                     <div class="news_data">
-                                        <div class="news_posted_at">12 DEC 12</div>
-                                        <div class="news_comments">2</div>
+                                        <div class="news_posted_at">27/03/2023 às 14:28
+                                        </div>
+                                        <div class="news_comments">VACINA</div>
                                     </div>
                                     <div class="news_thumbnail">
-                                        <img src="assets/img/dr.jpg" alt="">
+                                        <img src="assets/img/noticias/1vacina.jpg" alt="">
                                     </div>
                                     <div class="news_title">
-                                        Lorem ipsum dolor sit amat velum
+                                        No Brasil, 57% das meninas tomaram duas doses de vacina contra HPV
                                     </div>
                                     <div class="news_resume">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque est voluptatem nemo iste optio culpa dolorum accusamus minus nulla vitae nobis unde corrupti id perferendis voluptates cumque, laudantium dolorem!
+                                        Meta da OMS é de 90% de imunização do público alvo; vacina está disponível no SUS para crianças a partir dos 9 anos
                                     </div>
                                 </a>
                             </article>
                             <article>
-                                <a href="#">
+                                <a href="https://www.cnnbrasil.com.br/saude/veja-os-perigos-do-fentanil-e-como-as-pessoas-podem-prevenir-overdoses/" target="_blank">
                                     <div class="news_data">
-                                        <div class="news_posted_at">12 DEC 12</div>
-                                        <div class="news_comments">2</div>
+                                        <div class="news_posted_at">27/03/2023 às 12:50
+                                        </div>
+                                        <div class="news_comments">ESTADOS UNIDOS</div>
                                     </div>
                                     <div class="news_thumbnail">
-                                        <img src="assets/img/dr.jpg" alt="">
+                                        <img src="assets/img/noticias/2estadosunidos.jpg" alt="">
                                     </div>
                                     <div class="news_title">
-                                        Lorem ipsum dolor sit amat velum
+                                        Veja os perigos do fentanil e como as pessoas podem prevenir overdoses
                                     </div>
                                     <div class="news_resume">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque est voluptatem nemo iste optio culpa dolorum accusamus minus nulla vitae nobis unde corrupti id perferendis voluptates cumque, laudantium dolorem!
+                                        Especialista ouvida pela CNN dá dicas de como familiares podem evitar droga que vem causando diversas mortes nos Estados Unidos
                                     </div>
                                 </a>
                             </article>
                             <article>
-                                <a href="#">
+                                <a href="https://www.cnnbrasil.com.br/saude/cancer-de-intestino-preocupa-jovens-e-adultos-conheca-os-riscos-e-sintomas/" target="_blank">
                                     <div class="news_data">
-                                        <div class="news_posted_at">12 DEC 12</div>
-                                        <div class="news_comments">2</div>
+                                        <div class="news_posted_at">27/03/2023 às 11:24</div>
+                                        <div class="news_comments">SAÚDE PÚBLICA</div>
                                     </div>
                                     <div class="news_thumbnail">
-                                        <img src="assets/img/dr.jpg" alt="">
+                                        <img src="assets/img/noticias/3saudepublica.jpg" alt="">
                                     </div>
                                     <div class="news_title">
-                                        Lorem ipsum dolor sit amat velum
+                                        Câncer de intestino preocupa jovens e adultos; conheça os riscos e sintomas
                                     </div>
                                     <div class="news_resume">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque est voluptatem nemo iste optio culpa dolorum accusamus minus nulla vitae nobis unde corrupti id perferendis voluptates cumque, laudantium dolorem!
+                                        Número de internações por câncer de intestino aumentou 64% nos últimos dez anos; doença está associada principalmente aos hábitos de alimentação
                                     </div>
                                 </a>
                             </article>
                             <article>
-                                <a href="#">
+                                <a href="https://www.cnnbrasil.com.br/saude/vacina-de-alta-protecao-contra-gripe-chega-ao-mercado-privado-em-abril/" target="_blank">
                                     <div class="news_data">
-                                        <div class="news_posted_at">12 DEC 12</div>
-                                        <div class="news_comments">2</div>
+                                        <div class="news_posted_at">27/03/2023 às 10:38</div>
+                                        <div class="news_comments">SAÚDE</div>
                                     </div>
                                     <div class="news_thumbnail">
-                                        <img src="assets/img/dr.jpg" alt="">
+                                        <img src="assets/img/noticias/4vacina.jpg" alt="">
                                     </div>
                                     <div class="news_title">
-                                        Lorem ipsum dolor sit amat velum
+                                        Vacina de alta proteção contra gripe chega ao mercado privado em abril
                                     </div>
                                     <div class="news_resume">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque est voluptatem nemo iste optio culpa dolorum accusamus minus nulla vitae nobis unde corrupti id perferendis voluptates cumque, laudantium dolorem!
+                                        Imunizante é quadrivalente e protege contra quatro cepas do vírus, sendo duas de influenza A e duas de influenza B, e apresenta quatro vezes mais antígenos
                                     </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="https://www.cnnbrasil.com.br/saude/cancer-de-intestino-tem-aumento-de-64-em-internacoes-em-uma-decada/" target="_blank">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">27/03/2023 às 08:27</div>
+                                        <div class="news_comments">SAÚDE</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assets/img/noticias/4vacina.jpg" alt="">
+                                    </div>
+                                    <div class="news_title">
+                                        Câncer de intestino tem aumento de 64% em internações em uma década
+                                    </div>
+                                    <div class="news_resume">
+                                        Aumento do consumo de alimentos ultraprocessados e a redução do consumo de fibras, somados a sedentarismo, tabagismo e alcoolismo, são as principais causas do crescimento dos cânceres intestinais
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="https://www.cnnbrasil.com.br/saude/o-que-pode-causar-mal-para-meu-pet-veja-lista-de-plantas-e-alimentos-toxicos/" target="_blank">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">27/03/2023 às 08:10</div>
+                                        <div class="news_comments">SAÚDE</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assets/img/noticias/6pets.jpg" alt="">
+                                    </div>
+                                    <div class="news_title">
+                                        O que pode causar mal para meu pet? Veja lista de plantas e alimentos tóxicos
+                                    </div>
+                                    <div class="news_resume">
+                                        Animais intoxicados podem apresentar uma série de complicações que vão além de sintomas como vômitos e diarreias                                    </div>
                                 </a>
                             </article>
                         </div>
@@ -161,20 +210,69 @@
                 <aside>
                     <div class="widget">
                         <div class="widget_title">
-                            <div class="widget_title_text">Departement</div>
+                            <div class="widget_title_text">Departamentos</div>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="ywidget_bod">
-                            ...
+                            <article>
+                                <a href="#">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">24/03/2023</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assets/img/departament.jpg" alt="">
+                                    </div>
+                                    <div class="news_title">
+                                        Departamento Médico Hospitalar
+                                    </div>
+                                    <div class="news_resume">
+                                        Responsável pelo atendimento médico e cuidados com os pacientes em hospitais e unidades de saúde, incluindo serviços como diagnóstico, tratamento, cirurgias, internações e emergências.
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">24/03/2023</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assets/img/departamentoempresarial.png" alt="">
+                                    </div>
+                                    <div class="news_title">
+                                        Departamento Médico de Empresas:
+                                    </div>
+                                    <div class="news_resume">
+                                        oferece serviços de saúde e bem-estar para os colaboradores, como consultas médicas, exames, programas de prevenção de doenças e informações sobre saúde e hábitos saudáveis.
+                                    </div>
+                                </a>
+                            </article>
                         </div>
                     </div>
                     <div class="widget">
                         <div class="widget_title">
-                            <div class="widget_title_text">Make An Appointment</div>
+                            <div class="widget_title_text">Marque uma consulta</div>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="widget_body">
-                            ...
+                            <article>
+                                <a href="#">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">24/03/2023</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assets/img/consulta.jpg" alt="">
+                                    </div>
+                                    <div class="news_title">
+                                        Atendimento humanizado
+                                    </div>
+                                    <div class="news_resume">
+                                        Agende sua consulta no nosso hospital e tenha acesso a uma equipe médica de excelência, que oferece atendimento humanizado e personalizado para cuidar da sua saúde.
+                                    </div>
+                                </a>
+                            </article>
                         </div>
                     </div>
                 </aside>
@@ -245,7 +343,7 @@
                                 </div>
                                 <div class="widget_bod_conteudo">
                                     <p>Mauris adipiscing mauris fringlla turpis interdum sed pulvinar nisi malesuada individual.</p>
-                                    <p style="color:aqua">6 years ago</p>
+                                    <p style="color: #39aae1">6 years ago</p>
                                 </div>
                             </div>
 
@@ -255,7 +353,7 @@
                                 </div>
                                 <div class="widget_bod_conteudo">
                                     <p>Mauris adipiscing mauris fringlla turpis interdum sed pulvinar nisi malesuada individual.</p>
-                                    <p style="color:aqua">6 years ago</p>
+                                    <p class="years" style="color:#39aae1">6 years ago</p>
                                 </div>
                             </div>
 
@@ -265,7 +363,7 @@
                                 </div>
                                 <div class="widget_bod_conteudo">
                                     <p>Mauris adipiscing mauris fringlla turpis interdum sed pulvinar nisi malesuada individual.</p>
-                                    <p style="color:aqua">6 years ago</p>
+                                    <p style="color:#39aae1">6 years ago</p>
                                 </div>
                             </div>
                         </div>                 
@@ -283,7 +381,7 @@
                                     </div>
                                     <div class="widget_bod_conteudo">
                                         <p>Mauris adipiscing mauris fringlla turpis interdum sed pulvinar nisi malesuada individual.</p>
-                                        <p style="color:aqua">4 years ago</p>
+                                        <p style="color:#39aae1">4 years ago</p>
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +392,7 @@
                                     </div>
                                     <div class="widget_bod_conteudo">
                                         <p>Mauris adipiscing mauris fringlla turpis interdum sed pulvinar nisi malesuada individual.</p>
-                                        <p style="color:aqua">4 years ago</p>
+                                        <p style="color:#39aae1">4 years ago</p>
                                     </div>
                                 </div>
                             </div>
@@ -305,7 +403,7 @@
                                     </div>
                                     <div class="widget_bod_conteudo">
                                         <p>Mauris adipiscing mauris fringlla turpis interdum sed pulvinar nisi malesuada individual.</p>
-                                        <p style="color:aqua">4 years ago</p>
+                                        <p style="color:#39aae1">4 years ago</p>
                                     </div>
                                 </div>
                             </div>
